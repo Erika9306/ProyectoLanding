@@ -1,0 +1,916 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(225, 220, 220);
+}
+/*-----------NAVBAR--------------*/
+nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(242, 239, 239);
+    
+
+}
+
+.nav-choice , .nav-account {
+   display: flex;  
+   gap: 10px;
+   list-style: none;
+   margin: 0;
+   padding:0;
+   
+}
+.menu{
+    display: none;
+}
+.nav-choice{
+   flex: 1;
+    justify-content:flex-start;
+    gap: 20px;
+    margin-left: 20px;
+   
+}
+.nav-account{
+    justify-content: flex-end;
+    gap: 20px;
+   
+}
+
+
+a{
+text-decoration: none;
+color: black;
+
+}
+.logo{
+    height: 30px;
+   margin-right: 0px;
+} 
+
+/*-------HERO IMAGE-------*/
+
+.hero-image{
+    width: 100%;
+   
+    position: relative;
+    margin-right: 0;
+    padding-right: 0;
+   
+}
+.hero-image img{
+    width: 100%;
+}
+
+.hero-text{
+    height: auto;
+    text-align:start;
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 2%;
+}
+
+.hero-text h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 70px;
+}
+
+.hero-text h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    margin-left: 70px;
+}
+
+/*------------lista tipos coches-----------------*/
+.car-type{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    
+   
+}
+
+.car-type li {
+    width: 75%;
+    display: flex;
+    position: relative;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    background-color: rgb(144, 144, 144);   
+    margin:25px;
+    padding: 0;
+     
+    
+}
+.car-type li img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    position:absolute;
+    left: 0;
+    z-index: 0;
+    border-radius: 15px;;
+   
+    
+   
+}
+
+.car-text h4{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: black;
+    top: 10%;
+    left: 2%;
+    text-align: left;
+    z-index: 1;
+
+}
+
+.car-text .brand{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    top: 0%;
+    left: 2%;
+    text-align: left;    
+    z-index: 1;
+}
+
+.btn-info{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1;
+    bottom: 2%;
+    left: 2%;
+    width: 20%;
+    height: 10%;
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgb(199, 199, 199);
+    opacity: 0.8;
+    
+}
+
+.car-colors {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 20%; 
+    gap: 5px; 
+    z-index: 1;
+    bottom: 2%;
+    right: 2%;
+}
+
+.grey, .black, .blue, .red,.yellow{
+    border-radius: 50%;
+    width: 25%;
+    border: 2px solid white;
+    
+    
+}
+
+.car-colors > :first-child{
+    outline: 2px solid black; 
+}
+
+.grey{
+    background-color: grey;
+    color: grey;
+} 
+.black{
+    background-color: black;
+    color: black;
+}
+ .blue{
+    background-color: darkblue;
+    color: darkblue;
+ } 
+ .red{
+    background-color: red;
+    color: red;
+ }
+ .yellow{
+    background-color: yellow;
+    color: yellow;
+ }
+
+ h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(10, 10, 10);    
+    font-size: 5rem;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-left: 170px;  
+    padding-right: 300px;
+    margin-right: 200px;
+ }
+
+ .promotion{
+    position: relative;
+    text-align: left;
+    padding: 50px;
+    width: 100%;
+ }
+ .promotion h1 {
+    width: 100%;    
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 10px;       
+    margin-right: 800px;
+    
+    padding-right: 100px;
+}
+ .promotion p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-left: 170px;    
+    margin-right: 800px;
+    margin-bottom: 30px;
+    padding-right: 100px;
+ }
+ 
+ .find-partner {
+    position:relative;            
+    width: 100%;
+    
+    
+    
+}
+.find-partner img{   
+    width: 100%;
+    object-fit: cover;
+    height: 650px;
+    
+    
+ }
+
+ .find-partner p,
+ .find-partner button {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     opacity: 0.6;
+    left: 3%;
+     bottom: 25%;
+     background-color: rgba(255, 255, 255, 0.8); 
+     border-radius: 10px;
+     font-size: 1.2rem;
+     width: 30%;
+     height: 40%;
+ }
+ .find-partner p{
+    margin:10px;
+    padding: 20px;
+    font-size: 2.65rem;
+    text-align: left;
+   
+
+ }
+
+.find-partner button{
+    position: absolute;
+    width:15%;
+    height: 40px;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-left: 30px;
+    transform: translateY(-50%);
+    padding: 8px 5px;
+    background-color: #f6f4f4;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+  
+
+ /*----------Barra horizontal -------*/
+.item-list{
+    display: flex;
+    width: 100%;
+    /*par que se vea barra*/
+    overflow-x:scroll;
+    white-space: nowrap;
+  
+}
+.item-list ul {    
+    display: flex; 
+    gap: 20px;
+    list-style: none; 
+    width:auto;
+    margin: 20px;
+    }
+
+.item-list li {
+    position: relative;
+    width: 600px;
+    height: 400px;      
+    margin: auto;  
+    border-radius: 10px;   
+    background-color: rgb(169, 169, 169);  
+    overflow: hidden;   
+    
+}
+
+.item-list ul li h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+
+.item-list li img {
+    
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    display: block;
+    position: relative;     
+   
+}
+
+
+/* Estilo para la barra de desplazamiento */
+.item-list::-webkit-scrollbar {
+   
+    width: 3px; 
+    height: 15px; 
+}
+
+.item-list::-webkit-scrollbar-thumb {
+    background-color: rgb(181, 181, 181);  
+    border-radius: 10px;  
+}
+
+.item-list::-webkit-scrollbar-track {
+    margin: 15px;
+    background-color: #d7d7d7; 
+    border-radius: 10px;  
+}
+
+ /*------------Imagenes coche----------------*/
+
+ .tentation-car{   
+    width: 100%;
+    position: relative;
+    margin-right: 0;
+    padding-right: 0;
+   
+ }
+ .tentation-car img{
+    width: 100%;
+   
+ }
+
+ .tentation-car h3{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    height: auto;
+    text-align:start;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    bottom: 17%;
+    left: 2%;
+ }
+ .tentation-car p{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    margin-right: 600px;
+    padding-right: 500px;
+    font-weight: 200;
+   color: rgb(255, 255, 255);;
+    bottom: 7%;
+    left: 2%;
+}
+
+/*--------RUEDA---------*/
+
+.car-wheel{
+    width: 100%;
+    height: 800px;   
+    position: relative;
+    display: flex;
+    flex-direction: row;      
+    background-color: white;
+    justify-content: space-between; 
+   
+}
+
+.car-wheel img{
+    object-fit: cover;   
+    width: 50%;
+    height: auto;
+    margin: 70px 30px 70px 20px;
+
+    
+   
+}
+.car-text{
+    width: 50%;   
+   display: flex;
+   flex-direction: column;  
+   justify-content: center;   
+   align-items: flex-start; 
+     
+   gap: 10px;
+  
+}
+
+.car-text h3, 
+.car-text p, 
+.car-text a {
+    position: relative; }
+
+.car-text h3{
+    order: 1;
+    font-family: 'Times New Roman', Times, serif;   
+      text-align: left;
+      padding: 40px; 
+    font-size: 3.3rem;
+    font-weight: 500;
+   
+}
+.car-text p{
+   order: 2;
+    font-family: 'Times New Roman', Times, serif;    
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+    
+}
+
+
+.car-text a{
+   order: 3;   
+border: none;    
+   
+}
+
+
+
+/*-------------Contact NOW---------*/
+.dreams{
+    background-color: rgb(86, 86, 86);
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+   
+    position: relative;
+    
+    padding: 50px;
+}
+.dreams p{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.dreams button{
+    position: absolute;
+    top: 50%;
+    right: 5%; 
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+/*---------Footer--------------*/
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;       
+    gap: 20px;
+    position: relative;
+    
+    
+}
+
+#newsletter{
+    width: 100%;
+    margin: 30px;
+    align-items: center;    
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+} 
+
+#newsletter h3{
+    margin:10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+} 
+#newsletter h4{
+   font-weight: 100;
+   color:rgb(144, 144, 144);
+}
+
+#newsletter form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#email {
+    width: 100%; 
+    background-color: rgb(0, 0, 0);   
+    padding: 10px 80px 10px 30px; 
+    border: 1px solid white;
+    border-radius: 20px;
+    color:  rgb(144, 144, 144);
+    font-family: 'Times New Roman', Times, serif;
+   
+   
+}
+
+#newsletter button {
+    position: absolute;
+    top: 50%;
+    right: 0px; 
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 3px solid white;
+    border-radius: 20px;
+    
+}
+.container-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 10px;
+    color:rgb(144, 144, 144);
+}
+
+
+ #items-social{
+    list-style: none;
+    gap: 20px;
+    display:flex;
+    flex-direction: row;     
+    align-items:center;
+    justify-content: center;
+  
+ }
+
+ .footer-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    text-align: left;
+    margin: 40px;
+ } 
+
+.unordered{
+width:100%;
+list-style: none;
+text-align: center;
+
+
+} 
+
+.unordered h4{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 10px;
+        
+} 
+ .unordered li{
+    list-style: none;
+    font-size: 1rem;
+   color: rgb(144, 144, 144);
+   text-align: left;
+   margin-left: 210px;    
+  
+} 
+
+#page-up {
+   
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+}  
+
+
+/*-----------Media Queries------------------*/
+
+  @media (min-width: 320px) and (max-width: 768px){
+    .nav-choice {
+        display: none;
+    }
+    .menu{
+        display:block !important;
+        
+    }
+    .nav-account{
+    width: 0%;   
+    position: absolute;
+    display: flex;
+   right: 10%;       
+}
+
+main{
+    position: relative;
+    width:100%;
+    
+}
+main img{
+    width: 100%;
+    height: auto;
+   display: block;
+    
+}
+
+.hero-text{
+    padding: 0;
+    position: absolute;
+    width:100% ;
+    top: 70%;
+    right: 0%;
+   
+
+}
+.hero-text h2{
+    font-size: 1.3rem;
+    font-weight: 200;
+    text-align: left;
+}
+
+.car-type{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;            
+    
+}
+
+
+.car-colors{
+    display: none;
+}
+
+.promotion h1{
+    width: 100%;
+    height: 50%;
+    font-size: 3rem;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+
+}
+.promotion > p{
+    font-size: 1.5rem;
+    font-style: italic;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+
+}
+.find-partner{
+    width: 100%;
+    display: block;
+    position:relative;
+    height: auto;
+    
+    
+}
+.find-partner img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+.find-partner > p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0%;
+    font-size: 2.3rem;
+    color: black;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.find-partner button{
+    display: block; 
+    background-color: white;
+    border-radius: 25px;
+    height: 40px;
+    width: 40%;
+    margin: 30px auto 0; 
+    border: 3px solid white;
+    font-size: 0.8rem; 
+       
+}
+
+.tentation-car{
+   
+    position: relative; 
+    width: 100%;
+    height: auto;
+
+}
+
+.tentation-car > img{
+    width:100%;
+    height: auto;
+    
+}
+
+.tentation-car > h3{
+       position: relative; 
+    width: 100%;
+   height: auto;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin-top: 30px;   
+        
+}
+
+.tentation-car > p{
+    width: 100%; 
+    position:relative;   
+    display: block; 
+    color: black;
+    height: auto;
+    font-size: 1rem;   
+    text-align: left;
+    margin: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.car-wheel{
+    width: 100%;
+    height: auto;
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;    
+       
+}
+
+.car-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;   
+    
+
+}
+.car-text h3{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    
+}
+
+.car-wheel img {
+    width: 100%;    
+    height: auto;
+   
+}
+
+.car-wheel p{
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    
+}
+
+.car-wheel :last-child{
+    text-align: center;
+}
+
+.dreams{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.dreams p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+
+}
+.dreams button{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+    
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+}
+.unordered{
+    text-align: center;
+}
+
+.unordered li{
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-list h4{
+   margin: 10px;
+    text-align: center;
+}
+
+}
+
+
+ 
